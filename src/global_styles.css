@@ -1,0 +1,13 @@
+/* Add application styles & imports to this file! */
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+:root {
+/* CSS HEX */
+--tekhelet: #4f2f7fff;
+--brandeis-blue: #0066ffff;
+--uranian-blue: #b7d3f2ff;
+--rich-black: #071e22ff;
+--taupe-gray: #847577ff;
+
+
+}

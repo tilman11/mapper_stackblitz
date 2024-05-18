@@ -1,0 +1,56 @@
+button, input, select, textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+button {
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+mat-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+mat-header-cell, mat-cell {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+mat-cell, mat-header-cell {
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+  height: 100%; /* Ensure the cell takes full height */
+}
+
+mat-header-row {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+mat-row:nth-child(even) {
+  background-color: var(--background-color);
+}
+
+/* In company-table.component.css or styles.css */
+.mapping-key-column {
+  width: 400px; /* Adjust the width as needed */
+}
+
+.mapping-input-field{
+  width: 380px;
+  }
+
+.chip-select{
+  color: var(--tekhelet);
+}

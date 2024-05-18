@@ -1,0 +1,70 @@
+<app-phase-switcher></app-phase-switcher>
+
+<div class="drop-list-container">
+  <div
+    class="drop-list-standard"
+    (dragover)="onDragOver($event)"
+    (drop)="onFileDrop($event)"
+    (click)="openFileInput()"
+  >
+    NEW MAPPING
+    <input
+      type="file"
+      #fileInput
+      style="display: none;"
+      (change)="onFileChange($event)"
+    />
+  </div>
+
+  <div
+    class="drop-list-tbeam"
+    (dragover)="onDragOver($event)"
+    (drop)="onFileDrop($event)"
+    (click)="openFileInput()"
+  >
+    TBEAM
+    <input
+      type="file"
+      #fileInput
+      style="display: none;"
+      (change)="onFileChange($event)"
+    />
+  </div>
+
+  <div
+    class="drop-list-caseware"
+    (dragover)="onDragOver($event)"
+    (drop)="onFileDrop($event)"
+    (click)="openFileInput()"
+  >
+    CASEWARE
+    <input
+      type="file"
+      #fileInput
+      style="display: none;"
+      (change)="onFileChange($event)"
+    />
+  </div>
+</div>
+
+<!-- Excel Data Table -->
+<div *ngIf="excelData.length > 0">
+  <table>
+    <thead>
+      <tr>
+        <!-- Dynamically create table headers -->
+        <th *ngFor="let column of getTableHeaders(excelData)">
+          {{ column }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of excelData">
+        <!-- Dynamically create table rows -->
+        <td *ngFor="let cell of getRowData(row)">
+          {{ cell }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,8 @@
+<div class="search-dropdown">
+  <input type="text" [formControl]="searchControl" placeholder="Search...">
+  <ul *ngIf="filteredOptions.length > 0">
+    <li *ngFor="let option of filteredOptions" (click)="onOptionSelected(option)">
+      {{ option }}
+    </li>
+  </ul>
+</div>

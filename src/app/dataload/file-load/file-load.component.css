@@ -1,0 +1,150 @@
+/* styles.css */
+.file-drop-area {
+  border: 2px dashed #009688; /* Teal color, you can choose your own */
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px;
+  cursor: pointer;
+  width: 50%; /* Adjust width as needed */
+  margin: auto;
+  margin-top: 100px; /* Adjust vertical positioning */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  background-color: #f9f9f9; /* light background */
+}
+
+.file-drop-area:hover {
+  border-color: #00796b; /* Darker teal on hover */
+}
+
+.file-drop-area p {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.info-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 150, 136, 0.9); /* Semi-transparent teal */
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  visibility: hidden; /* Initially hidden */
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.file-drop-area:hover .info-box {
+  visibility: visible; /* Show on hover */
+  opacity: 1;
+}
+
+.alert-success {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/*new generated draganddrop*/
+/* Existing styles.css content */
+/* ... */
+/* Parent container for drop-lists */
+.drop-list-container {
+  display: flex; /* Use Flexbox */
+  justify-content: space-around; /* Evenly space out items */
+  align-items: center; /* Align items vertically */
+  margin: 20px 0; /* Vertical margin for the container */
+}
+
+.drop-list-standard, .drop-list-tbeam, .drop-list-caseware {
+  width: 150px; /* Fixed width for square */
+  height: 150px; /* Fixed height for square */
+  border: 2px solid white; /* Solid border */
+  display: flex; /* Use Flexbox */
+  cursor: default;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-radius: 0px; /* Quadrat shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modern shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  text-align: center; /* Ensure text is aligned center */
+  padding: 10px; /* Padding for content */
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button-58 {
+  align-items: center;
+  background-color: #06f;
+  border: 2px solid #06f;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-58:focus {
+  color: #171e29;
+}
+
+.button-58:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+/* Hover effect for each drop-list */
+.drop-list-standard:hover, .drop-list-tbeam:hover, .drop-list-caseware:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Individual styling for each drop-list */
+.drop-list-standard {
+  background-color: #0066ffff; /* Vibrant Pink Background */
+}
+
+.drop-list-tbeam {
+  background-color: #0066ffff; /* Deep Purple Background */
+}
+
+.drop-list-caseware {
+  background-color: #0066ffff; /* Teal Background */
+}
+
+/* Hover effects */
+.drop-list-standard:hover, .drop-list-tbeam:hover, .drop-list-caseware:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  border-color: #fff; /* White border on hover */
+}
+
+/* Additional styles for modern UI feel */
+body {
+  background-color: #f4f4f4; /* Light grey background for the page */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  color: #333; /* Dark grey text for readability */
+}
+
+/* You can add more styles as needed for other elements */
